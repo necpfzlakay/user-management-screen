@@ -1,0 +1,147 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user management screen</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.1/dist/ionicons.js"></script>
+
+</head>
+<style>
+    html {
+        font-size: 62.5%;
+    }
+</style>
+
+<body>
+
+
+    <div class="row" style="width: 100%; ">
+        <div class="col-12" style="height: 5vh; padding-top: 10px;">
+            <div class="row">
+                <div class="col-1">
+                    <button type="button" class="btn btn-primary">  + New User</button>
+
+                </div>
+
+                <div class="col-2">
+                    <input id="hide" type="checkbox">
+                    <label for="hide">Hide Disabled User</label>
+
+                </div>
+                <div class="col" style="text-align: right;">
+                    <button type="button" class="btn btn-primary" disabled> Save User</button>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="col-6">
+            <table class="table">
+                <thead class="thead-Primary bg-primary">
+                    <tr>
+                        <th scope="col">ID <img style="width: 20px;" src="assets/funnel-outline.svg" alt="" srcset=""></th>
+                        <th scope="col">User Name <img style="width: 20px;" src="assets/funnel-outline.svg" alt="" srcset=""></th>
+                        <th scope="col">Email<img style="width: 20px;" src="assets/funnel-outline.svg" alt="" srcset=""></th>
+                        <th scope="col">Enabled<img style="width: 20px;" src="assets/funnel-outline.svg" alt="" srcset=""></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>AdminUser</td>
+                        <td>admin@piworks.net</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Test User</td>
+                        <td>testUser@piworks.net</td>
+                        <td>true</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+        </div>
+        <div class="col-6">
+            <div class="conteiner" style="align-self: center; font-size: large;">
+                <div class="container-fluid" style="height: 5vh; background-color: darkgray; align-self: center; margin-bottom: 10px;">
+                    New User
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">Username:</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">Display Name: </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">Phone </span>
+                    </div>
+                    <input type="number" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">email </span>
+                    </div>
+                    <input type="email" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+
+                </div>
+
+
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-secondary" type="button">User Roles</button>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect03">
+                      <option selected>Select User Roles</option>
+                      <option value="1">Admin</option>
+                      <option value="2">SuperAdmin</option> 
+                    </select>
+                </div>
+
+                <div class="row">
+                    <div class="col-2">
+                        Enabled:
+                    </div>
+                    <div class="col-1" style="text-align: left;">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="checkbox" aria-label="Checkbox for following text input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
